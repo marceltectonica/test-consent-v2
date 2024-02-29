@@ -29,7 +29,7 @@
   <!-- Create one update function for each consent parameter -->
   <script>
     function consentGrantedAdStorage() {
-      alert('hola');
+      console.log('grant all permisions');
       gtag('consent', 'update', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
@@ -62,7 +62,7 @@
     <h2>Consent</h2>
     <p>By clicking the button, you agree to our terms</p>
     <div>
-      <input type="radio" id="huey" name="consents" value="storage" onclick="consentGrantedAdStorage()" />
+      <input type="radio" id="consents" name="consents" value="storage" onclick="consentGrantedAdStorage()" />
       <label for="huey">Huey</label>
     </div>
   </div>
